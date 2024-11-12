@@ -8,9 +8,9 @@ For growth of technical issue
 - [1.1 Hardware](-hardware)
   -   [1.1.1 computer](-computer)
   -   [1.1.2 lidar](-lidar)
-  -   [1.1.2 camera](-camera)
-  -  [1.1.3 gps](-gps)
-  - [1.1.4 obs](-osb)
+  -   [1.1.3 camera](-camera)
+  -  [1.1.4 gps](-gps)
+  - [1.1.5 erp](-erp)
 
 - [1.2 Software](-software)
   - [1.2.1 OS](-os)
@@ -46,6 +46,18 @@ For growth of technical issue
 
 
 # 1.1 Hardware
+
+## 1.1.1 Computer
+we use two comptuer
+## 1.1.2 Lidar
+we use velodyne-16
+## 1.2.3 Camera
+we use usbcam and firm carmera
+## 1.2.4 Gps
+
+## 1.2.5 Erp
+
+## 1.2.6 Imu
 
 # 1.2 Software
 
@@ -124,7 +136,7 @@ roslaunch yolov7_ros vision_all
 <!--control  packae에 대한 설명을 담아주세요! -->
 
 
-# 2. How to Set up
+# 2. How to use
 
 ## 2.1 How to install package
 
