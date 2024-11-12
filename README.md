@@ -148,7 +148,7 @@ git clone https://github.com/Ajou-Nice/AutonomusRacing2024
 cd AutonomusRacing2024
 
 # develope is our main develope branch
-git pull develope
+git pull origin develope
 
 # move branch to develope
 git checkout develope
