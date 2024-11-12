@@ -1,0 +1,3 @@
+<launch>
+  <node pkg="aonehorn_detection" type="cone_detector_node" name="cone_detector" output="screen"/>
+</launch>
