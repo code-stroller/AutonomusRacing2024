@@ -5,20 +5,21 @@ For growth of technical issue
 
 # Overview
 ##  1. System Architecrue
-- [1.0 Hardware](-hardware)
-  -   [computer](-computer)
-  -   [ lidar](-lidar)
-  -   [ vision](-vision)
-  -  [gps](-gps)
-  - [obs](-osb)
+- [1.1 Hardware](-hardware)
+  -   [1.1.1 computer](-computer)
+  -   [1.1.2 lidar](-lidar)
+  -   [1.1.2 camera](-camera)
+  -  [1.1.3 gps](-gps)
+  - [1.1.4 obs](-osb)
 
-- [1.1 Software](-software)
-  - [OS](-os)
-  - [ROS](-total)
-  - [catkine workspace](#catkin-worksapce)
-  - [control package](#control-package)
-  - [lidar package](#lidar-package)
-  - [vision package](#vision-package)
+- [1.2 Software](-software)
+  - [1.2.1 OS](-os)
+  - [1.2.2 ROS](-total)
+  - [1.2.3 catkine workspace](#catkin-worksapce)
+  - [1.2.4 control package](#control-package)
+  - [1.2.5 lidar package](#lidar-package)
+  - [1.2.6 vision package](#vision-package)
+  - [1.2.7 multi vision package](#vision-package)
 
 
 ## 2. How to Use
@@ -27,7 +28,7 @@ For growth of technical issue
 - [2.2 How to Run](#-Run)
   - [final ](final)
   - [pre ](pre)
-  - [package](pacakge)
+  - [labacon](labacon)
   - [util](rviz)
 - [2.3 How to develope](#-develope)
 
@@ -42,8 +43,15 @@ For growth of technical issue
 ## 4. Contributors
 
 
+# 1.1 Hardware
 
-# catkin workspace
+# 1.2 Software
+
+## 1.2.1 OS
+we use Ubuntu 20.04
+## 1.2.2 ROS
+we use ros noetic and multicore
+## 1.2.3  catkin workspace
 this is our workspace tree
 
 ```
@@ -58,19 +66,19 @@ base_ws
 
 ```
 
-# Lidar package
+## 1.2.4 Lidar package
 
 <!--lidar packae에 대한 설명을 담아주세요! -->
 
-# Vision package
+## 1.2.5 Vision package
 
 <!--vision packae에 대한 설명을 담아주세요! -->
 
-##  spinnaker_camera_driver
+###  spinnaker_camera_driver
 
 spinnaker 의카메라 센서를 키고 조작하기 위한 패키지입니다.
 
-## yolov7_ros
+### yolov7_ros
 
 yolov7_ros는 yolo를 사용하며 신호등인식과 표지판인식을 수행하여, 신호등의 값과 표지판의 좌표를 제어프로그램에 전달하기 위한 패키지입니다.
 
@@ -81,14 +89,16 @@ yolov7_ros는 yolo를 사용하며 신호등인식과 표지판인식을 수행�
 roslaunch yolov7_ros vision_all
 
 ```
-# Control package
+## 1.2.6 Control package
 
 <!--control  packae에 대한 설명을 담아주세요! -->
 
 
-# How to Set up
+# 2. How to Set up
 
-## 1.  build
+## 2.1 How to install package
+
+## 2.2 How to  Build
 
 ```
 
@@ -98,16 +108,7 @@ catkin_make
 
 
 ```
-
-## 2.  Run
-
-
-
-```
-roslaunch example example.launch
-```
-
-# How to develope
+## 2.3 How to develope
 
 If you  want add more functions or discriptions following below process. we will follow this [example](https://velog.io/@diduya/git-%ED%9A%A8%EC%9C%A8%EC%A0%81%EC%9D%B8-%ED%98%91%EC%97%85%EC%9D%84-%EC%9C%84%ED%95%9C-Git-Flow-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0-git-branch-repository)
 
@@ -139,4 +140,30 @@ git commit -m "your message"
 git push your branch
 ```
 
-# Results
+
+
+## 2.4 How to  Run
+
+### Pre
+
+```
+roslaunch example example.launch
+
+```
+
+### Final
+```bash
+roslaunch example example.launch
+
+```
+
+### labacone
+```bash
+
+roslaunch example example.launch
+
+```
+
+# 3. Results
+
+# 4. Contributors
