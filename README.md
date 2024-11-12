@@ -23,15 +23,17 @@ For growth of technical issue
 
 
 ## 2. How to Use
-- [2.0 How to install package](-install)
-- [2.1 How to Build](-build)
-- [2.2 How to Run](#-Run)
+- [2.1 How to install package](-install)
+- [2.2 How to Build](-build)
+- [2.3 How to Run](#-Run)
   - [final ](final)
   - [pre ](pre)
   - [labacon](labacon)
   - [util](rviz)
-- [2.3 How to develope](#-develope)
-
+- [2.4 How to develope](#-develope)
+- [2.5 How to downlaod data](#-donwlaod-data)
+    - [rosbag](rosbag)
+- [2.6 How to Test](#-Run)
 ## 3. Results
 
 - [final results](final)
@@ -60,9 +62,28 @@ base_ws
     ├── control
     │   └── README.md
     ├── lidar
-    │   └── README.md
+    │   ├── Light_signal
+    │   ├── README.md
+    │   ├── aonehorn_detection
+    │   ├── cmake
+    │   ├── common
+    │   ├── custom_msg
+    │   ├── erp_driver
+    │   ├── examples
+    │   ├── feature_extractors
+    │   ├── object_builders_lib
+    │   ├── roi_filters
+    │   ├── rviz_car_model
+    │   ├── segmenters_lib
+    │   ├── tracking_lib
+    │   ├── tracking_msg
+    │   ├── vehicle_msgs
+    │   └── velodyne
     └── vision
-        └── README.md
+        ├── README.md
+        ├── cits_logger
+        ├── usb_cam
+        └── yolov7_ros
 
 ```
 
@@ -78,7 +99,16 @@ base_ws
 
 spinnaker 의카메라 센서를 키고 조작하기 위한 패키지입니다.
 
+```bash
+
+#spinnaker camerar를 킵니다.
+
+roslaunch spinnaker_camera_driver camera.launch
+
+```
+
 ### yolov7_ros
+
 
 yolov7_ros는 yolo를 사용하며 신호등인식과 표지판인식을 수행하여, 신호등의 값과 표지판의 좌표를 제어프로그램에 전달하기 위한 패키지입니다.
 
@@ -146,14 +176,36 @@ git push your branch
 
 ### Pre
 
-```
+```bash
+
+##ros
+
+##control
+
+##lidar
+
+##vision
+
 roslaunch example example.launch
 
 ```
 
 ### Final
 ```bash
-roslaunch example example.launch
+
+##ros
+
+##control
+
+##lidar
+
+##vision
+
+## vision
+roslaunch usb_cam camera.launch
+roslaunch sipinnaker_camera_driver camera.launch
+roslaunch yolov7_ros vison_all_v11.launch
+roslaunch cits_logger cits.launch
 
 ```
 
@@ -164,6 +216,8 @@ roslaunch example example.launch
 
 ```
 
+##  2.4 How to downlaod data
+##  2.5 How to test
 # 3. Results
 
 # 4. Contributors
